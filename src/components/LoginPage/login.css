@@ -1,0 +1,88 @@
+@import url(../../index.css);
+body{
+    background-color:  hsl(216, 22%, 95%);;
+}
+
+.page-container{
+    background-color: white;
+    width: max-content;
+    line-height: 1.5rem;
+    margin: auto;
+    color: black;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgb(122, 100, 122);
+
+
+}
+
+form{
+   width: max-content;
+    padding: 2rem;
+    margin: auto;
+}
+.input-box{
+     height: 2.6rem;
+     width: 28rem;
+     border-radius: 5px;
+     padding-left: 0.4rem;
+     font-size: 1.2rem;
+     border: 2px solid var(--secondary-color); 
+     outline:none
+}
+
+.page-heading{
+     text-align: center;
+     margin-top: 2rem;
+     padding-top: 2rem;
+}
+
+.input-label{
+    font-size: 1.4rem;
+}
+
+.forget-pass{
+    margin-left:13rem;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+    
+}
+
+.div-ch-a{    
+    font-size: 1rem;
+}
+
+
+.login__btn {
+    height: 2.3rem;
+    margin: 0rem 2rem;
+    width: 24rem;
+    background-color: var(--secondary-color);
+    border-style: none;
+    border-style: none;
+    border-radius: 5px;
+    font-size: 1.2rem
+}
+
+.buttons{
+    border-style: none;
+    color: var(--text-color);
+}
+
+.bottom-div{
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.a-blue-color{
+    color:var(--primary-color);
+}
+
+.star{
+    color: red;
+}
+
+
+
+
