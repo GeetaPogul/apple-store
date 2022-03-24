@@ -1,4 +1,4 @@
-@import url(../css/navbar.css);
+@import url(../HomePage/navbar.css);
  .home-image
  {
      width: 100%;
@@ -57,7 +57,7 @@
  .card-image {
        
    margin-top: 1rem;
-   margin-left: 1.8rem;
+   margin-left: 1rem;
    width: 16rem;
    height: 14rem;
    
@@ -96,5 +96,13 @@
       padding-right: 11px;
     font-size: 1.6rem;
     color: var(--icon-color);
+}
+
+.products-link{
+  color: var(--text-color);
+  font-size: 1rem;
+}
+.products-link:hover{
+  color: var(--text-color);
 }
 

@@ -1,5 +1,8 @@
 import React from 'react'
-import "../css/navbar.css"
+import "../HomePage/navbar.css"
+
+import {Link, Routes, Route} from "react-router-dom"
+import Wishlist from '../Wishlist/Wishlist'
 
 export default function Navbar() {
   return (
@@ -35,8 +38,13 @@ export default function Navbar() {
                     <button className="btn btn-login"> Login</button></a> 
             
         <a href="../Wishlist/wishlist.html"> <button className="btn icons">
+
+        {/* <Link to="/Wishlist"> Wishlist</Link>
+        <Routes> 
+        <Route path='/Wishlist' element={<Wishlist /> } />
              <i className="far fa-heart"></i>  
-                
+
+             </Routes>    */}
             </button></a> 
 
 
