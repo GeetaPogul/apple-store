@@ -15,7 +15,7 @@ import Signup from "./components/SignUp/Signup";
 
 import Wishlist from "./components/Wishlist/Wishlist";
 
-import Product from "./components/ProductListing/Product";
+import Product from "./components/Products/Product";
 
 import HomePage from "./components/HomePage/HomePage"
 
@@ -23,6 +23,7 @@ import {Link} from "react-router-dom";
 
 function App() {
   return (
+    
     <div className="App">
      <nav className='navigation__bar'> 
       
@@ -71,7 +72,7 @@ function App() {
 
         <Route path='/Product' element={<Product/>} />
 
-        Home {""}
+        
 
       </Routes>
        {/* <Navbar /> */}

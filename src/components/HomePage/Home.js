@@ -2,7 +2,7 @@ import React from 'react';
 import "../HomePage/home.css"
 
 import {Route, Routes, Link} from "react-router-dom";
-import Product from "../ProductListing/Product.js";
+import Product from "../Products/Product";
 function Home() {
   return (
     <div>
