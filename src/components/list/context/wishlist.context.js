@@ -1,3 +1,5 @@
+import React from "react";
+
 import { createContext, useContext, useReducer } from "react";
 
 const WishlistContext = createContext();

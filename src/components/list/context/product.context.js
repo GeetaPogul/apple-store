@@ -1,46 +1,70 @@
+import React from "react";
 import { createContext, useContext, useReducer } from "react";
+import { v4 as uuid } from "uuid";
 
 const myProducts = [
   {
-    id: 1,
-    name: "Kala Chasma",
+    id: uuid(),
+    name: "iMac Product1",
     price: 1000,
-    delivery_status: "Minimum 3 Days"
+    delivery_status: "Minimum 3 Days",
+    img: "/images/imac/imac1.jpg",
   },
 
   {
-    id: 2,
-    name: "dress",
-    price: 5000,
-    delivery_status: "Fast Delivery"
+    id: uuid(),
+    name: "iMac Product2",
+    price: 15000,
+    delivery_status: "Fast Delivery",
+    img: "/images/imac/imac2.jpg",
   },
 
   {
-    id: 3,
-    name: "jalebi",
-    price: 50,
-    delivery_status: "Fast Delivery"
+    id: uuid(),
+    name: "iMac Product3",
+    price: 50000,
+    delivery_status: "Fast Delivery",
+    img: "/images/imac/imac3.webp",
   },
 
   {
-    id: 4,
-    name: "japani joota",
-    price: 10000,
-    delivery_status: "Fast Delivery"
+    id: uuid(),
+    name: "iMac Product4",
+    price: 19000,
+    delivery_status: "Fast Delivery",
+    img: "/images/imac/imac4-1.png",
   },
 
   {
-    id: 5,
-    name: "topi",
-    price: 1000,
-    delivery_status: "Minimum 3 Days"
+    id: uuid(),
+    name: "iMac Product5",
+    price: 21000,
+    delivery_status: "Minimum 3 Days",
+    img: "/images/ipad/ipad1.jpg",
   },
   {
-    id: 6,
-    name: "japani ",
-    price: 13000,
-    delivery_status: "Fast Delivery"
-  }
+    id: uuid(),
+    name: "iMac Product6",
+    price: 21000,
+    delivery_status: "Minimum 3 Days",
+    img: "/images/ipad/ipad2.webp",
+  },
+  {
+    id: uuid(),
+    name: "iMac Product7",
+    price: 21000,
+    delivery_status: "Minimum 3 Days",
+    img: "/images/ipad/ipad3.jpg",
+  },
+
+  {
+    id: uuid(),
+    name: "iMac Product8",
+    price: 21000,
+    delivery_status: "Minimum 3 Days",
+    img: "/images/ipad/ipad4.jpg",
+  },
+ 
 ];
 
 const ProductsContext = createContext();
@@ -50,18 +74,18 @@ const filterReducer = (state, action) => {
     case "Sort-By":
       return {
         ...state,
-        sortBy: action.payload
+        sortBy: action.payload,
       };
 
     case "Fast_Delivery":
       return {
         ...state,
-        fastDelivery: !state.fastDelivery
+        fastDelivery: !state.fastDelivery,
       };
     case "Min_Days":
       return {
         ...state,
-        minDays: !state.minDays
+        minDays: !state.minDays,
       };
     default:
       return state;
@@ -75,7 +99,7 @@ const ProductsProvider = ({ children }) => {
     {
       sortBy: "",
       minDays: false,
-      fastDelivery: false
+      fastDelivery: false,
     }
   );
 
@@ -86,7 +110,7 @@ const ProductsProvider = ({ children }) => {
         sortBy,
         minDays,
         fastDelivery,
-        filtersDispatch
+        filtersDispatch,
       }}
     >
       {children}

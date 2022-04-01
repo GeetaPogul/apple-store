@@ -1,3 +1,4 @@
+import React from "react";
 import { createContext, useContext, useReducer } from "react";
 
 const CartContext = createContext();
@@ -22,7 +23,7 @@ const cartReducer = (state, action) => {
               quantity:
                 cartItem.quantity > 1
                   ? cartItem.quantity - 1
-                  : cartItem.quantity
+                  : cartItem.quantity,
             }
           : cartItem
       );

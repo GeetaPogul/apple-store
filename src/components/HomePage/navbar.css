@@ -1,257 +1,218 @@
-:root{
-    /* --primary-color :  hsl(217, 87%, 55%); */
-
-    --primary-color: #1e90ff;
-    --text-color : #ffffff;
-    --icon-color:red;
+:root {
+  --primary-color: #1e90ff;
+  --text-color: #ffffff;
+  --icon-color: red;
 }
 
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.apple-logo{
-    height: 4rem;
-    width: 4rem;
+.apple-logo {
+  height: 4rem;
+  width: 4rem;
 }
 
-.navigation-bar{
-    background-color: var(--primary-color );
-    
+.navigation-bar {
+  background-color: var(--primary-color);
 }
 
-.logo-container{
-    width: max-content;
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 2em;
+.logo-container {
+  width: max-content;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2em;
 }
 
-.logo-text{
-    margin-top:.8rem;
-    font-size: 1.7rem;
-    font-family: cursive;
-    
+.logo-text {
+  margin-top: 0.8rem;
+  font-size: 1.7rem;
+  font-family: cursive;
 }
 
-.logo{
-    display: flex;
-    text-decoration: none;
-    color: var(--text-color);
-    
-
+.logo {
+  display: flex;
+  text-decoration: none;
+  color: var(--text-color);
 }
-.navigation-bar{
-    background-color: var(--primary-color );display: flex;
-}
-
-.logo-input-container{
-    display: flex;
+.navigation-bar {
+  background-color: var(--primary-color);
+  display: flex;
 }
 
-.btn{
-    font-size: 1.1rem;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    margin-top:.4rem ;
-    margin-left: .8rem;
-    border-style: none;
-    padding: .3rem;
-    
+.logo-input-container {
+  display: flex;
 }
 
-.btn-login{
-    background-color: var(--text-color);
-    color: var(--primary-color);
-    font-weight: 500;         
-    border-radius: .2rem;
-    padding: .3rem 1.3rem;
+.btn {
+  font-size: 1.1rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  margin-top: 0.4rem;
+  margin-left: 0.8rem;
+  border-style: none;
+  padding: 0.3rem;
 }
 
-.right-side-navbar{
-  
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-   
+.btn-login {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+  font-weight: 500;
+  border-radius: 0.2rem;
+  padding: 0.3rem 1.3rem;
 }
 
-.icons{
-    margin-bottom: 1rem;
-    font-size: 1.5em;
-   
+.right-side-navbar {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
-.search-input{
-    height:2.0rem;
-    width: 20rem; 
-    margin-top: .5rem; 
-    border-radius: .2rem;
-    border-style: none; 
-    margin-left: 2rem; 
-   
-} 
+
+.icons {
+  margin-bottom: 1rem;
+  font-size: 1.5em;
+}
+.search-input {
+  height: 2rem;
+  width: 20rem;
+  margin-top: 0.5rem;
+  border-radius: 0.2rem;
+  border-style: none;
+  margin-left: 2rem;
+}
 
 /* input search btn */
 
-
-
 /* mobile view style */
 
-@media(min-width : 500px) {
+@media (min-width: 500px) {
+  .search-input {
+    height: 2rem;
+    width: 14rem;
+    margin-top: 0.5rem;
+    border-radius: 0.2rem;
+    border-style: none;
+    margin-left: 2rem;
+  }
 
-    
-      .search-input{
-         height:2.0rem;
-         width: 14rem; 
-         margin-top: .5rem; 
-         border-radius: .2rem;
-         border-style: none; 
-         margin-left: 2rem; 
-        
-     } 
+  .logo-input-container {
+    display: flex;
+  }
 
-     .logo-input-container{
-         display: flex;
-     }
+  .btn {
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin-top: 0.4rem;
+    margin-left: 0.8rem;
+    border-style: none;
+    padding: 0.3rem;
+  }
 
-     .btn{
-        font-size: 1.1rem;
-        background-color: var(--primary-color);
-        color: var(--text-color);
-        margin-top:.4rem ;
-        margin-left: .8rem;
-        border-style: none;
-        padding: .3rem;
-        
-    }
+  .btn-login {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    border-radius: 0.2rem;
+    padding: 0.3rem 1.3rem;
+  }
 
-    .btn-login{
-        background-color: var(--text-color);
-        color: var(--primary-color);
-        font-weight: 500;         
-        border-radius: .2rem;
-        padding: .3rem 1.3rem;
-    }
+  .right-side-navbar {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-    .right-side-navbar{
-      
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        
-       
-    }
-
-    .icons{
-        margin-bottom: 1rem;
-        font-size: 1.5em;
-       
-    }
-    
+  .icons {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+  }
 }
 
+@media (min-width: 800px) {
+  html {
+    font-size: 75%;
+  }
+  .search-input {
+    height: 2rem;
+    width: 26rem;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+    border-style: none;
+    margin-left: 2rem;
+  }
+  .logo-input-container {
+    display: flex;
+  }
+  .btn {
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin-top: 0.8rem;
+    margin-left: 4rem;
+    border-style: none;
+    padding: 0.3rem;
+  }
+  .icons {
+    margin-bottom: 1rem;
+    font-size: 1.5em;
+  }
 
- @media(min-width : 800px){
+  .btn-login {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    border-radius: 0.2rem;
+    padding: 0.3rem 1.3rem;
+  }
+  .navigation-bar {
+    background-color: var(--primary-color);
+    display: flex;
+  }
+}
 
-    html {
-        font-size: 75%;
-    }
-    .search-input{
-        height:2.0rem;
-        width: 26rem; 
-        margin-top: 1rem; 
-        border-radius: .2rem;
-        border-style: none; 
-        margin-left: 2rem; 
-       
-    }
-    .logo-input-container{
-        display: flex;
-    }
-    .btn{
-        font-size: 1.1rem;
-        background-color: var(--primary-color);
-        color: var(--text-color);
-        margin-top:.8rem ;
-        margin-left: 4rem;
-        border-style: none;
-        padding: .3rem;
-        
-    }
-    .icons{
-        margin-bottom: 1rem;
-        font-size: 1.5em;
-       
-    }
+@media (min-width: 1100px) {
+  html {
+    font-size: 85%;
+  }
+  .search-input {
+    height: 2rem;
+    width: 32rem;
+    margin-top: 1rem;
+    border-radius: 0.2rem;
+    border-style: none;
+    margin-left: 8rem;
+  }
+  .logo-input-container {
+    display: flex;
+  }
+  .btn {
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+    border-style: none;
+    padding: 0.3rem;
+  }
+  .icons {
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+    font-size: 1.5em;
+    padding: 0rem 1.5rem;
+  }
 
-    .btn-login{
-        background-color: var(--text-color);
-        color: var(--primary-color);
-        font-weight: 500;         
-        border-radius: .2rem;
-        padding: .3rem 1.3rem;
-    }
-    .navigation-bar{
-        background-color: var(--primary-color );display: flex;
-    }
+  .btn-login {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    font-weight: 500;
+    border-radius: 0.2rem;
+    padding: 0.3rem 1.3rem;
+  }
 
-    
- }
-
-
- @media(min-width : 1100px){
-
-    html {
-        font-size: 85%;
-    }
-    .search-input{
-        height:2.0rem;
-        width: 32rem; 
-        margin-top: 1rem; 
-        border-radius: .2rem;
-        border-style: none; 
-        margin-left: 8rem; 
-       
-    }
-    .logo-input-container{
-        display: flex;
-    }
-    .btn{
-        font-size: 1.1rem;
-        background-color: var(--primary-color);
-        color: var(--text-color);
-        margin-top:.8rem ;
-        margin-left: 2rem;
-        border-style: none;
-        padding: .3rem;
-        
-    }
-    .icons{
-        margin-bottom: 1rem;
-        margin-left: 2rem;
-        font-size: 1.5em;
-        padding: 0rem 1.5rem;
-       
-    }
-
-    .btn-login{
-        background-color: var(--text-color);
-        color: var(--primary-color);
-        font-weight: 500;         
-        border-radius: .2rem;
-        padding: .3rem 1.3rem;
-    }
-
-    .right-side-navbar{
-        margin-top: .3rem;
-      margin-left: 6rem;
-      padding: .3rem 4rem;
-        
-       
-    }
-    
-    
- }
-
-  
+  .right-side-navbar {
+    margin-top: 0.3rem;
+    margin-left: 6rem;
+    padding: 0.3rem 4rem;
+  }
+}

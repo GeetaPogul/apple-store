@@ -1,0 +1,29 @@
+.product-slider{
+    background-color: var(--text-color);
+    /* width: max-content; */
+    width: 36rem;
+    padding: 3rem;
+    /* padding-left: 4rem; */
+    padding-top:2rem;
+    line-height: 1.9rem;
+    margin-top:.4rem;
+    font-size: 1.1rem;
+    /* box-shadow: 1px 0px 4px rgb(151, 140, 140); */
+    box-shadow: 1px 1px 4px rgb(151, 140, 140);
+    height: max-content;
+    overflow-y: scroll;
+}
+
+.aside-top{
+    display: inline-flex;
+    gap: 4rem;
+}
+.page{
+     display: flex;
+     /* background-color: red; */
+     /* margin-left: 2rem;  */
+}
+.heading{
+    text-align: "center";
+}
+
