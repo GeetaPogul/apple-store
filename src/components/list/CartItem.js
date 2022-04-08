@@ -35,7 +35,8 @@ const CartItem = () => {
                 width: "16rem",
                 height: "14rem",
               }}
-              src={cartItem.img}
+              src={cartItem.img} 
+              alt="card"
             />
             <h3> {cartItem.name} </h3>
             <h3> Quantity : {cartItem.quantity} </h3>

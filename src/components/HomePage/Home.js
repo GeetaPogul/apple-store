@@ -7,7 +7,11 @@ const Home = () => {
   return (
     <div>
       <div className="bg-image">
-        <img className="home-image" src="../images/home-img.jpg" />
+        <img
+          className="home-image"
+          src="../images/home-img.jpg"
+          alt="home-img"
+        />
 
         <Link className="text-on-image" to="/Product">
           <h1> Explore ! </h1>
@@ -22,11 +26,11 @@ const Home = () => {
       <br></br> <br />
       <div className="cards-container">
         <div className="card">
-          <img className="card-image" src="../images/imac/imac1.jpg" alt="" />
-
-          {/* <div className="top-icon-red "> 
-                  <i className="fas fa-heart card-heart-icon" > </i> 
-              </div> */}
+          <img
+            className="card-image"
+            src="../images/imac/imac1.jpg"
+            alt="card-category-img"
+          />
 
           <div className="btn-bar btn-macbook">
             <button className="card-btn btn1">
@@ -38,11 +42,11 @@ const Home = () => {
         </div>
 
         <div className="card">
-          <img className="card-image" src="../images/ipad/ipad1.jpg" alt="" />
-
-          {/* <div className="top-icon-red "> 
-                  <i className="fas fa-heart card-heart-icon" > </i> 
-              </div> */}
+          <img
+            className="card-image"
+            src="../images/ipad/ipad1.jpg"
+            alt="card-category-img"
+          />
 
           <div className="btn-bar btn-macbook">
             <button className="card-btn btn1">
@@ -57,12 +61,9 @@ const Home = () => {
           <img
             className="card-image"
             src="../images/watch/apple-watch2.jpg"
-            alt=""
+            alt="card-category-img"
           />
 
-          {/* <div className="top-icon-red "> 
-                  <i className="fas fa-heart card-heart-icon" > </i> 
-              </div> */}
 
           <div className="btn-bar btn-macbook">
             <button className="card-btn btn1">

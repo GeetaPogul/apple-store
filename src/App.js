@@ -20,8 +20,7 @@ function App() {
 
   const wishItemNum = wishlistState.length;
 
-  // const num = wishlistState.length
-  // const {num} = useWishlist();
+ 
   return (
     <div className="App">
       <div>
@@ -63,12 +62,9 @@ function App() {
               </i>
             </Link>
 
-            {/* notification badge  */}
-
-            {/* <Link  to="/CartPage" ><i className=" notification nav-icons fas fa-shopping-cart "> <span className="badge">3</span></i>  </Link> */}
+          
           </span>
 
-          {/* <Link to ="Product">Product </Link> */}
         </nav>
 
         <Routes>
