@@ -14,7 +14,7 @@ const Home = () => {
         />
 
         <Link className="text-on-image" to="/Product">
-          <h1> Explore ! </h1>
+          <h1> Explore here ! </h1>
         </Link>
 
         <Routes>

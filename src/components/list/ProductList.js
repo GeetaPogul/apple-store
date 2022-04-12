@@ -11,6 +11,13 @@ const ProductList = () => {
     sortBy,
     fastDelivery,
     minDays,
+    iMac,
+    iPad,
+    iWatch,
+    fourStars,
+    threeStars,
+    twoStars,
+    oneStar,
     filtersDispatch,
   } = useProducts();
 
@@ -35,8 +42,26 @@ const ProductList = () => {
       );
     } else if (minDays) {
       return products.filter(
-        (product) => product.delivery_status === "Minimum 3 Days"
+        (product) => product.delivery_status === "Out of Stock"
       );
+    } else if (iMac) {
+      return products.filter((product) => product.category === "iMac");
+    } else if (iPad) {
+      return products.filter((product) => product.category === "iPad");
+    } else if (iWatch) {
+      return products.filter((product) => product.category === "AppleWatch");
+    }
+    else if (fourStars) {
+      return products.filter((product) => product.ratings === "5star");
+    }
+    else if (threeStars) {
+      return products.filter((product) => product.ratings === "4star");
+    }
+    else if (twoStars) {
+      return products.filter((product) => product.ratings === "3star");
+    }
+    else if (oneStar) {
+      return products.filter((product) => product.ratings === "2star");
     }
 
     return products;
@@ -73,35 +98,68 @@ const ProductList = () => {
         </div>
         <div className="category-filter">
           <h4> Category</h4>
+
           <label>
-            <input type="checkbox" /> Imac
+            <input
+              type="checkbox"
+              checked={iMac}
+              onChange={() => filtersDispatch({ type: "iMac" })}
+            />{" "}
+            Imac
           </label>
           <br />
           <label>
-            <input type="checkbox" /> Ipad
+            <input
+              type="checkbox"
+              checked={iPad}
+              onChange={() => filtersDispatch({ type: "iPad" })}
+            />{" "}
+            Ipad
           </label>
           <br />
           <label>
-            <input type="checkbox" /> Apple watch
+            <input
+              type="checkbox"
+              checked={iWatch}
+              onChange={() => filtersDispatch({ type: "iWatch" })}
+            />{" "}
+            Apple watch
           </label>
         </div>
         <div className="filter-rating">
           <h4> Rating</h4>
           <label>
-            <input type="radio" name="rating" /> 4 Star & above
-          </label>{" "}
+            <input 
+            type="radio" 
+            name="rating"
+            checked={fourStars}
+            onChange={()=> filtersDispatch({type : "fourStars"})}
+            /> 4 Star & above
+          </label>
           <br />
           <label>
-            <input type="radio" name="rating" /> 3 Star & above
-          </label>{" "}
+            <input type="radio"
+             name="rating"
+             checked={threeStars}
+             onChange={ () => filtersDispatch({type : "threeStars"})}
+             /> 3 Star & above
+          </label>
           <br />
           <label>
-            <input type="radio" name="rating" /> 2 Star & above
-          </label>{" "}
+            <input type="radio"
+             name="rating"
+             checked={twoStars}
+             onChange={ () => filtersDispatch({type : "twoStars"})}
+             /> 2 Star & above
+          </label>
           <br />
           <label>
-            <input type="radio" name="rating" /> 2 Star & above
-          </label>{" "}
+            <input type="radio"
+             name="rating"
+             checked={oneStar}
+             onChange={ () => filtersDispatch({type : "oneStar"})}
+             /> 1 Star & above
+          </label>
           <br />
         </div>
         <div className="sort">
@@ -145,37 +203,38 @@ const ProductList = () => {
             onChange={() => filtersDispatch({ type: "Fast_Delivery" })}
           />
           Fast Delivery
-        </lable>
+        </lable>{" "}
+        <br />
         <lable>
           <input
             type="checkbox"
             checked={minDays}
-            onChange={() => filtersDispatch({ type: "Min_Days" })}
+            onChange={() => filtersDispatch({ type: "OutOfStock" })}
           />
-          3 Days
+          Out of Stock
         </lable>
       </div>
 
-      {/* <h2> Products </h2> */}
-      <br/>
-      <div style={{ display: "flex", flexWrap: "wrap", marginLeft:"3%" }}>
+      <br />
+      <div style={{ display: "flex", flexWrap: "wrap", marginLeft: "5%" }}>
         {finalProducts.map((product) => (
           <div
-          
             key={product.id}
             style={{
               margin: "1rem",
-              maxWidth: "40%",
-              padding: "2rem",
+             
+              width: "30%",
+              padding: "3rem",
               background: "white",
-              boxShadow:" 1px 1px 4px rgb(151, 140, 140)",
+              boxShadow: " 1px 1px 4px rgb(151, 140, 140)",
             }}
           >
             <img
               src={product.img}
               alt=""
               style={{
-                width: "16rem",
+                marginLeft :"1rem",
+                width: "18rem",
                 height: "14rem",
               }}
             />
@@ -183,10 +242,10 @@ const ProductList = () => {
             <h5> {product.price}</h5>
             <h5> {product.delivery_status}</h5>
 
-            <div >
+            <div>
               {cartState.find((cartItem) => cartItem.id === product.id) ? (
                 <button
-                className="card__btn btn1 pri-btn"
+                  className="card__btn btn1 pri-btn"
                   onClick={() =>
                     cartDispatch({
                       type: "Remove-From-Cart",
@@ -213,7 +272,7 @@ const ProductList = () => {
                 (wishlistItem) => wishlistItem.id === product.id
               ) ? (
                 <button
-                className="card__btn btn1 sec-btn"
+                  className="card__btn btn1 sec-btn"
                   onClick={() =>
                     wishlistDispatch({
                       type: "Remove-From-Wishlist",

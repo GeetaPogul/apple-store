@@ -25,7 +25,7 @@ function App() {
     <div className="App">
       <div>
         <nav className="navigation__bar">
-          <Link className="logo-text" to="/HomePage ">
+          <Link className="logo-text" to="/HomePage " id="active">
             <i className="fa fa-apple" aria-hidden="true"></i>-store
           </Link>
 
@@ -36,20 +36,16 @@ function App() {
               placeholder=" search here..."
               name="search"
             />
-            <button className="nav-btn " type="submit">
+            {/* <button className=" btn nav-btn " type="button">
               <i className="fa fa-search "></i>
-            </button>
+            </button> */}
           </span>
 
           <span className="right-nav-bar">
             <Link to="/Login ">
               <button className="btns login-btn"> Login</button>
             </Link>
-
-            <Link to="/Signup">
-              <i className="nav-icons fa fa-sign-in" aria-hidden="true"></i>
-            </Link>
-            <Link to="/Wishlist">
+             <Link to="/Wishlist">
               <i className=" notification nav-icons far fa-heart">
                 <span className="badge"> {wishItemNum}</span>
               </i>

@@ -11,16 +11,24 @@
   --icon-color: red;
 }
 
+/* html{
+  font-size: 62.5%;
+} */
 .navigation__bar {
   background-color: var(--primary-color);
-  font-size: 1.5rem;
-  height: 10vh;
-  padding: 1rem 2rem;
+  font-size: 4rem;
+  height: 9rem;
+  padding: .5rem 2rem;
 }
 
 .logo-text {
   color: var(--text-color);
   margin-left: 2rem;
+  
+}
+
+#active{
+  font-size: 3rem;
 }
 
 .logo-text:hover {
@@ -34,29 +42,32 @@
 }
 .input {
   width: 30%;
+  height: 4rem;
   border-style: none;
-  border-bottom-left-radius: 0.6rem;
-  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.4rem;
+  border-top-left-radius: 0.4rem;
+  border-top-right-radius: .4rem;
+  border-bottom-right-radius: .4rem;
   outline: none;
   font-size: 1.5rem;
-  padding-left: 1rem;
+  padding-left: .1rem;
 }
 
 .nav-btn {
   border-style: none;
   background-color: var(--text-color);
-  border-bottom-right-radius: 0.6rem;
-  border-top-right-radius: 0.6rem;
+  border-bottom-right-radius: .1rem;
+  border-top-right-radius: 1rem;
 }
 
 .right-nav-bar {
   float: right;
-  font-size: 1.4rem;
-  margin: 0rem 1rem;
+  font-size: 1.8rem;
+  margin: 2rem 3rem;
 }
 .nav-icons {
   color: var(--text-color);
-  margin: 0rem 3rem;
+  margin: 0rem 4rem;
 }
 
 .login-btn {
@@ -66,8 +77,8 @@
 .btns {
   color: var(--primary-color);
   border-style: none;
-  padding: 0.2rem 1.2rem;
-  border-radius: 0.4rem;
+  padding: .3rem 2rem;
+  border-radius: .4rem;
   background-color: white;
 }
 
@@ -76,25 +87,40 @@
 .notification {
   color: white;
   text-decoration: none;
-  padding: 4px 2px;
+  padding: .4rem .2rem;
   position: relative;
   display: inline-block;
-  border-radius: 2px;
+  border-radius: .2rem;
 }
 
 .notification .badge {
   position: absolute;
-  top: -10px;
-  right: -16px;
-  padding: 4px 6px;
+  top: -1rem;
+  right: -1.2rem;
+  padding: .4rem .6rem;
   border-radius: 50%;
   background-color: red;
   color: white;
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 600px) {
+
+/* @media only screen and (max-width: 600px) {
   .right-nav-bar {
     float: left;
   }
+} */
+
+
+@media (max-width: 998px) {
+  html{
+    font-size: 55%
+  }
+}
+
+@media (max-width : 550) {
+  html {
+    font-size: 40%;
+  }
+  
 }

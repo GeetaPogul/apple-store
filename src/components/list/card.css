@@ -18,6 +18,7 @@
   align-items: center;
   text-align: center;
   
+  
 }
 .sec-btn{
   background-color: var(--primary-color);
@@ -34,10 +35,10 @@
 
 .btn1 {
   
-  padding: 0.5rem 1.4rem;
+  padding: 0.8rem 1.8rem;
   border-radius: 0.4rem;
   
-  width: 16rem;
+  width: 20rem;
 }
 .wrapper{
   /* display: flex; */

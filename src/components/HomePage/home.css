@@ -1,4 +1,5 @@
 @import url(../HomePage/navbar.css);
+
 .home-image {
   width: 100%;
   height: 90vh;
@@ -16,7 +17,7 @@
   font-family: cursive;
   text-decoration: none;
   color: var(--text-color);
-  font-size: 1.6rem;
+  font-size: 2rem;
   grid-area: 1/-1;
   justify-self: center;
   align-self: center;
@@ -33,18 +34,19 @@
 
 .cards-container {
   display: flex;
-  /* justify-content: center; */
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 4rem;
 }
 
 .card {
   position: relative;
   font-family: monospace;
-  width: 260px;
+  width: 300px;
   padding: 1rem;
   background-color: var(--text-color);
   border-radius: 4px;
-  display: grid;
+  display: flex;
   box-shadow: 1px 0px 4px rgb(151, 140, 140);
 }
 .card:hover {
@@ -90,8 +92,21 @@
 
 .products-link {
   color: var(--text-color);
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 .products-link:hover {
   color: var(--text-color);
+}
+
+@media (max-width: 998px) {
+  html{
+    font-size: 55%
+  }
+}
+
+@media (max-width : 550px) {
+  html {
+    font-size: 45%;
+  }
+  
 }
