@@ -1,0 +1,52 @@
+.headn{
+  color:red
+}
+.card__image{
+  width: 16rem;
+  height: 14rem;
+}
+
+
+.card__btn {
+  padding: 0.7rem;
+  color: var(--text-color);
+  border-style: none;
+  background-color: transparent;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  font-weight: bold;
+  align-items: center;
+  text-align: center;
+  
+  
+}
+.sec-btn{
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.pri-btn{
+  
+    color: var(--primary-color);
+    background-color: var(--text-color);
+    border: .1rem solid var(--primary-color);
+  
+}
+
+.btn1 {
+  
+  padding: 0.8rem 1.8rem;
+  border-radius: 0.4rem;
+  
+  width: 20rem;
+}
+.wrapper{
+  /* display: flex; */
+  justify-content: center;
+  gap: 4rem;
+}
+
+
+.add{
+  width: max-content;
+}

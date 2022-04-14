@@ -1,0 +1,25 @@
+.product-slider {
+  background-color: var(--text-color);
+
+  width: 24rem;
+  padding: 1.4rem 3.6rem;
+
+  padding-top: 2rem;
+  line-height: 2.5rem;
+  margin-top: 0.4rem;
+  font-size:1.5rem;
+
+  box-shadow: 1px 1px 4px rgb(151, 140, 140);
+  height: max-content;
+}
+
+.aside-top {
+  display: inline-flex;
+  gap: 4rem;
+}
+.page {
+  display: flex;
+}
+.heading {
+  text-align: "center";
+}
