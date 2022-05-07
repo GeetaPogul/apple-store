@@ -1,6 +1,7 @@
 import React from "react";
 import { useWishlist } from "./context/wishlist.context";
 import "../list/slider.css"
+import { Link } from "react-router-dom";
 
 const WishlistItem = () => {
   const { wishlistState, wishlistDispatch, } = useWishlist();
@@ -10,6 +11,7 @@ const WishlistItem = () => {
   return (
     <>
     <br/> <br/>
+    <Link className="links" to="/product"> like more Items </Link>
        <h1 className="heading"> Wishlist Items :  {wishlistState.length}
         </h1>
         <div

@@ -1,12 +1,14 @@
 import React from "react";
 import { useCart } from "./context/cart.context";
 import "../list/slider.css";
+import { Link } from "react-router-dom";
 
 const CartItem = () => {
   const { cartState, cartDispatch } = useCart();
 
   return (
     <>
+    <Link className="links" to="/product"> Cart more Items </Link>
       
       <h1 className="heading"> Cart Items : {cartState.reduce((a, b) => a + b.quantity, 0)} </h1>
       <h3 className="heading">

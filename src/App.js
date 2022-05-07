@@ -46,9 +46,7 @@ function App() {
               <button className="btns login-btn"> Login</button>
             </Link>
 
-            <Link to="/Signup">
-              <i className="nav-icons fa fa-sign-in" aria-hidden="true"></i>
-            </Link>
+          
             <Link to="/Wishlist">
               <i className=" notification nav-icons far fa-heart">
                 <span className="badge"> {wishItemNum}</span>

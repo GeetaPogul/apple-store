@@ -33,7 +33,7 @@
   margin-left: 10%;
 }
 .input {
-  width: 30%;
+  width: 26%;
   border-style: none;
   border-bottom-left-radius: 0.6rem;
   border-top-left-radius: 0.6rem;
@@ -51,19 +51,21 @@
 
 .right-nav-bar {
   float: right;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin: 0rem 1rem;
 }
 .nav-icons {
   color: var(--text-color);
-  margin: 0rem 3rem;
+  margin: 0rem 3.5rem;
 }
 
 .login-btn {
+  margin-right: 3rem;
   color: var(--text-color);
 }
 
 .btns {
+  /* font-size: 1rem; */
   color: var(--primary-color);
   border-style: none;
   padding: 0.2rem 1.2rem;

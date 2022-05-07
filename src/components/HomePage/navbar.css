@@ -1,5 +1,6 @@
 :root {
-  --primary-color: #1e90ff;
+  /* --primary-color: #1e90ff; */
+  --primary-color: #0080ff;
   --text-color: #ffffff;
   --icon-color: red;
 }
@@ -26,7 +27,7 @@ a {
 
 .logo-text {
   margin-top: 0.8rem;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   font-family: cursive;
 }
 
