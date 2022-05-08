@@ -25,7 +25,6 @@
 
 .logo-text:hover {
   color: var(--text-color);
-  /*  var(--text-color); */
 }
 
 /* Searchbar */
@@ -65,7 +64,6 @@
 }
 
 .btns {
-  /* font-size: 1rem; */
   color: var(--primary-color);
   border-style: none;
   padding: 0.2rem 1.2rem;

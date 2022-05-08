@@ -20,12 +20,11 @@ function App() {
 
   const wishItemNum = wishlistState.length;
 
- 
   return (
     <div className="App">
       <div>
         <nav className="navigation__bar">
-          <Link className="logo-text" to="/HomePage ">
+          <Link className="logo-text" to="/">
             <i className="fa fa-apple" aria-hidden="true"></i>-store
           </Link>
 
@@ -46,7 +45,6 @@ function App() {
               <button className="btns login-btn"> Login</button>
             </Link>
 
-          
             <Link to="/Wishlist">
               <i className=" notification nav-icons far fa-heart">
                 <span className="badge"> {wishItemNum}</span>
@@ -59,15 +57,12 @@ function App() {
                 </span>
               </i>
             </Link>
-
-          
           </span>
-
         </nav>
 
         <Routes>
           <Route path="/CartPage" element={<CartPage />} />
-          <Route path="/HomePage" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/Signup" element={<Signup />} />
           <Route path="/Wishlist" element={<Wishlist />} />

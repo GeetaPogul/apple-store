@@ -5,10 +5,8 @@ import { useWishlist } from "../list/context/wishlist.context";
 import "../list/card.css";
 import "../list/slider.css";
 
-
 const ProductList = () => {
   const {
-    
     products,
     sortBy,
     fastDelivery,

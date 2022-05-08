@@ -42,11 +42,10 @@
   width: max-content;
 }
 
-.single-product{
-margin: 2rem;
-max-width: 30%;
-padding:2rem;
-background:white;
-box-shadow: "1px 1px 4px rgb(151,140,140)";
+.single-product {
+  margin: 2rem;
+  max-width: 30%;
+  padding: 2rem;
+  background: white;
+  box-shadow: "1px 1px 4px rgb(151,140,140)";
 }
-

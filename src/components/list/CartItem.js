@@ -8,9 +8,13 @@ const CartItem = () => {
 
   return (
     <>
-    <Link className="links" to="/product"> Cart more Items </Link>
-      
-      <h1 className="heading"> Cart Items : {cartState.reduce((a, b) => a + b.quantity, 0)} </h1>
+      <Link className="links" to="/product">
+        Cart more Items
+      </Link>
+
+      <h1 className="heading">
+        Cart Items : {cartState.reduce((a, b) => a + b.quantity, 0)}
+      </h1>
       <h3 className="heading">
         Total price : {cartState.reduce((a, b) => a + b.quantity * b.price, 0)}
       </h3>
@@ -37,7 +41,7 @@ const CartItem = () => {
                 width: "16rem",
                 height: "14rem",
               }}
-              src={cartItem.img} 
+              src={cartItem.img}
               alt="card"
             />
             <h3> {cartItem.name} </h3>

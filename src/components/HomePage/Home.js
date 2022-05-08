@@ -64,7 +64,6 @@ const Home = () => {
             alt="card-category-img"
           />
 
-
           <div className="btn-bar btn-macbook">
             <button className="card-btn btn1">
               <Link className="products-link" to="/Product">

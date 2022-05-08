@@ -31,7 +31,11 @@ function Login() {
             </label>
             <br />
 
-            <input className="input-box" type="password" placeholder="********" />
+            <input
+              className="input-box"
+              type="password"
+              placeholder="********"
+            />
             <br />
             <br />
 
@@ -39,7 +43,10 @@ function Login() {
               <input type="checkbox" />
               <label> Remember me</label>
 
-              <a className="forget-pass a-blue-color" href="../Files/index.html">
+              <a
+                className="forget-pass a-blue-color"
+                href="../Files/index.html"
+              >
                 Forget Password?
               </a>
             </div>
@@ -52,7 +59,8 @@ function Login() {
 
             <div className="bottom-div">
               <Link to="/Signup ">
-                Create new account <i className="fas fa-chevron-circle-right"></i>
+                Create new account
+                <i className="fas fa-chevron-circle-right"></i>
               </Link>
             </div>
           </form>

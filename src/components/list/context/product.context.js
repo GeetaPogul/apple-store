@@ -134,11 +134,11 @@ const ProductsContext = createContext();
 
 const filterReducer = (state, action) => {
   switch (action.type) {
-
     case "RANGE_FILTER":
       return {
-        ...state, range : action.payload,
-      }
+        ...state,
+        range: action.payload,
+      };
     case "Sort-By":
       return {
         ...state,
@@ -203,20 +203,19 @@ const filterReducer = (state, action) => {
         ...state,
         fastDelivery: false,
         outOfStock: false,
-        iMac :false,
-        iPad:false,
-        iWatch:false,
-        fiveStar:false,
-        fourStar:false,
-        threeStar:false,
-        twoStar:false,
+        iMac: false,
+        iPad: false,
+        iWatch: false,
+        fiveStar: false,
+        fourStar: false,
+        threeStar: false,
+        twoStar: false,
       };
     default:
       return state;
   }
 };
 
-// threeStar,twoStar
 const ProductsProvider = ({ children }) => {
   const products = myProducts;
   const [
@@ -234,10 +233,10 @@ const ProductsProvider = ({ children }) => {
     },
     filtersDispatch,
   ] = useReducer(filterReducer, {
-    range : 5000,
+    range: 5000,
     sortBy: "",
-    outOfStock: true,
-    fastDelivery: true,
+    outOfStock: false,
+    fastDelivery: false,
     iPad,
     iWatch,
     iMac,
@@ -248,7 +247,7 @@ const ProductsProvider = ({ children }) => {
   return (
     <ProductsContext.Provider
       value={{
-        range ,
+        range,
         products,
         sortBy,
         outOfStock,
